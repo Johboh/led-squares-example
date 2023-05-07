@@ -1,10 +1,10 @@
 # led-squares-example
 [![Test](https://github.com/Johboh/led-squares-example/actions/workflows/test.yaml/badge.svg)](https://github.com/Johboh/led-squares-example/actions/workflows/test.yaml)
 
-An example project for a LED matrix, as described on [Printables]().
+An example project for a LED matrix, as described on [Printables](https://www.printables.com/model/472278-modular-led-panelmatrix).
 
 ## Prerequisites
-- [A LED panel]()
+- [A LED panel](https://www.printables.com/model/472278-modular-led-panelmatrix)
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [Platform I/O extension](https://platformio.org/install/ide?install=vscode)
 - In this example, a [ESP32-S2](https://www.wemos.cc/en/latest/s2/s2_mini.html)
