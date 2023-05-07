@@ -11,13 +11,13 @@ An example project for a LED matrix, as described on [Printables]().
 - [imagemagick](https://imagemagick.org/)
 
 ## Getting started
-- Create a copy of [credentials.h.template](./src/credentials.h.template) and rename it to `credentials.h` and set your WiFi credentials.
-- [platform.ini](./platform.ini), adjust `upload_port` to your device upload port.
-- Adjust the `NUM_COLUMNS` and `NUM_ROWS` in [main.cpp](./src/main.cpp) to match the size of your panel.
+- Set your WiFi credentials in [credentials.h](./src/credentials.h).
+- [platform.ini](./src/platform.ini), adjust `upload_port` to your device upload port.
+- Adjust the `NUM_COLUMNS` and `NUM_ROWS` in [main.cpp](./src/main.cpp#L13) to match the size of your panel.
 - Compile and upload the project.
-- Adjust the IP number in [platform.ini](./platform.ini) to match the IP number of your device. the IP will be printed in the console on boot.
-- Adjust the IP in [upload_gif.sh](./scripts/upload_gif.sh) and [upload_static.sh](./scripts/upload_static.sh) to match the IP of your device.
-- Adjust the panel pixel width and height in [Upload.py](./scripts/Upload.py), [upload_static.sh](./scripts/upload_static.sh) and [upload_gif.sh](./scripts/upload_gif.sh). You can search for `56` to find all occurances (corresponding to a panel width of 7 tiles, each tile 8 pixels wide).
+- Adjust the IP number in [platform.ini](./src/platform.ini) to match the IP number of your device. the IP will be printed in the console on boot.
+- Adjust the IP in [upload_gif.sh](./scripts/upload_gif.sh#L16-L17) and [upload_static.sh](./scripts/upload_static.sh#L15-L16) to match the IP of your device.
+- Adjust the panel pixel width and height in [upload.py](./scripts/upload.py#L9), [upload_static.sh](./scripts/upload_static.sh#L14) and [upload_gif.sh](./scripts/upload_gif.sh#L14). You can search for `56` to find all occurances (corresponding to a panel width of 7 tiles, each tile 8 pixels wide).
 - To upload a image, go to the [scripts](./scripts) folder and run `./upload_static.sh /path/to/image.png`
 
 ## Dependencies
